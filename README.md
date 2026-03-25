@@ -80,6 +80,3 @@ If you want to run this locally for testing:
 
 Licensed under the [MIT License](https://www.google.com/search?q=LICENSE).
 Built with ☕ and 🥚 (Lots of egg inventory testing).
-
-**Would you like me to help you write a "User Guide" for your aunt so she knows exactly how to use the app on her phone?**
-```
