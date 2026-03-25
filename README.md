@@ -1,82 +1,47 @@
-````markdown
-# 🏪 Sari-Sari Digital Ledger (Tindahan Helper)
+<p align="center">
+  <br>
+  <font size="6"><b>🌿 Ang Listahan ni Tiya 🌿</b></font><br>
+  <i>Digital Ledger & Inventory for the Modern Bahay Kubo</i>
+  <br>
+  ━━━━━━━ 🌾 ━━━━━━━
+</p>
 
-A lightweight, mobile-first inventory and credit management system (Listahan) designed specifically for small Filipino retail stores. No more lost notebooks or manual math errors!
-
-![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-
----
-
-## ✨ Key Features
-
-*   **🛒 Digital Listahan:** Easily record "Utang" (credits) per customer with itemized details.
-*   **📦 Real-time Inventory:** Automatically deducts stock when a transaction is recorded and returns stock if a transaction is deleted.
-*   **💳 Payment Tracking:** Record partial or full payments with a single tap.
-*   **📱 Mobile-First Design:** Optimized for sari-sari store owners to use on their phones while tending the shop.
-*   **⚠️ Stock Alerts:** Visual warnings when items are out of stock.
-
-## 📸 Preview
-> **Note:** Built with a "Pills" navigation system for easy thumb-switching between recording Utang and Bayad.
+## 📜 Ang Kwento (The Story)
+Traditional sari-sari stores run on trust and tattered notebooks. **Ang Listahan ni Tiya** brings the warmth of the cottagecore aesthetic to the efficiency of Laravel. It is a simple, heart-crafted tool to manage *utang*, track *itlog at kape* stocks, and ensure the neighborhood tindahan thrives.
 
 ---
 
-## 🚀 Installation & Local Setup
+### 🪟 Mga Tampok (Special Features)
 
-If you want to run this locally for testing:
+| 🥥 Item | 🛖 Description |
+| :--- | :--- |
+| **Bayad at Utang** | A seamless toggle between credit and payments. |
+| **Imbentaryo** | Smart stock-keeping that breathes with every sale. |
+| **Mobile-First** | Designed to be used under the shade of a mango tree. |
+| **Zero-Cost** | Built to run on light, free hosting for the community. |
 
-1. **Clone the repo:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/sari_sari_app.git](https://github.com/YOUR_USERNAME/sari_sari_app.git)
-   cd sari_sari_app
-````
+---
 
-2.  **Install Dependencies:**
+### 🧺 Gabay sa Paggamit (User Guide)
 
-    ```bash
-    composer install
-    npm install && npm run dev
-    ```
+#### 𝜩 Record a Transaction
+Go to the customer's page and select your product. The system will automatically check if you have enough "stocks" before letting the *utang* proceed.
 
-3.  **Environment Setup:**
+#### 𝜩 Receive a Payment
+Tap the **Bayad** tab. You can type a partial amount or hit the "Full Pay" button to clear the soul (and the balance).
 
-      * Copy `.env.example` to `.env`
-      * Create a local database (e.g., `sari_sari_db`)
-      * Update your `.env` with your database credentials.
+#### 𝜩 Manage the Pantry
+Add new items, adjust prices, and watch the "Low Stock" alerts to know when it's time to visit the wholesaler.
 
-4.  **Run Migrations & Seeders:**
+---
 
-    ```bash
-    php artisan migrate
-    ```
+### 🛠 Pagbubuo (Technical Craftsmanship)
 
-5.  **Launch:**
+` ⚖ PHP 8.2 ` ` ✦ Laravel 11 ` ` ❦ Bootstrap 5 `
 
-    ```bash
-    php artisan serve
-    ```
-
-    Visit `http://localhost:8000` in your browser.
-
------
-
-## 🛠 Tech Stack
-
-  - **Backend:** Laravel 11 (PHP)
-  - **Frontend:** Blade Templates & Bootstrap 5
-  - **Icons:** Bootstrap Icons
-  - **Database:** MySQL / SQLite
-
-## 📝 Roadmap
-
-  - [ ] Export daily sales reports to PDF.
-  - [ ] SMS notifications for customers with overdue balances.
-  - [ ] QR Code payments integration.
-
------
-
-## ⚖️ License
-
-Licensed under the [MIT License](https://www.google.com/search?q=LICENSE).
-Built with ☕ and 🥚 (Lots of egg inventory testing).
+```bash
+# How to plant the seeds (Setup)
+composer install
+cp .env.example .env
+php artisan migrate --seed
+php artisan serve
