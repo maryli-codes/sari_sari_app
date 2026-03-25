@@ -1,5 +1,3 @@
-### Copy and Paste this into your `README.md`:
-
 ````markdown
 # 🏪 Sari-Sari Digital Ledger (Tindahan Helper)
 
